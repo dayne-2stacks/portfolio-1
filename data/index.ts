@@ -8,12 +8,12 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
-    description: "",
+    title: "University of South Florida Graduate",
+    description: "B.S. Computer Science - GPA: 4.00/4.00",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    // img: "/usf.jpeg",
     spareImg: "",
   },
   {
@@ -35,6 +35,7 @@ export const gridItems = [
     titleClassName: "justify-center",
     img: "",
     spareImg: "",
+    
   },
   {
     id: 4,
@@ -49,7 +50,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Currently researching SOTA Fingerprint Matching Algorithms",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -96,8 +97,8 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    title: "7-bit Parallel Multiplier ASIC Design",
+    des: "Developed a multiplier using 5nm transistor technology within a 900um x 900um area using custom transistor gate layouts.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "/ui.apple.com",
@@ -173,29 +174,33 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Volunteer Researcher",
+    desc: "Developed fingerprint pore detection and matching algorithms using graph KNN and machine learning.",
+    company: "USF College of Engineering",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title:  "Web Manager",
+    desc:  "Spearheaded website revamp and managed a database of 9,000+ users.",
+    company: "Patel College of Global Sustainability",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "IT Consultant",
+    desc: "Migrated an internationally hosted website to secure local servers.",
+    company: "Turneffe Atoll Sustainability Association",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "STEM Journalist",
+    desc: "Wrote science-based articles for public understanding.",
+    company: "Amandala",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -205,13 +210,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    url: "https://github.com/dayne-2stacks",
   },
   {
     id: 2,
     img: "/twit.svg",
+    url: "",
   },
   {
     id: 3,
     img: "/link.svg",
+    url: "https://www.linkedin.com/in/dayne-guy/",
   },
 ];

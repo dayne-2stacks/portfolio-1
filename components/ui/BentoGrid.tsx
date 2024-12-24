@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { IoCopyOutline } from "react-icons/io5";
+import { IoCopyOutline, IoArrowForward } from "react-icons/io5";
 
 // Also install this npm i --save-dev @types/react-lottie
 import Lottie from "react-lottie";
@@ -52,8 +52,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = ["PyTorch", "OpenCV", "Meta Llama"];
+  const rightLists = ["Cadence", "Verilog", "HSPICE"];
 
   const [copied, setCopied] = useState(false);
 
@@ -67,7 +67,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
+    const text = "dayneguy@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
@@ -125,7 +125,7 @@ export const BentoGridItem = ({
           )}
         >
           {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
-          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+          <div className="font-sans font-extralight md:max-w-48 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
             {description}
           </div>
           {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
@@ -150,7 +150,7 @@ export const BentoGridItem = ({
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
                     lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
-                    {item}
+                    {item} 
                   </span>
                 ))}
                 <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
@@ -163,12 +163,26 @@ export const BentoGridItem = ({
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
                     lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
-                    {item}
+                    {item} 
                   </span>
                 ))}
               </div>
             </div>
           )}
+          {
+            id == 3 && (
+              <div className="max-w-20 mt-relative">
+                <MagicButton
+                  title="View My Skills"
+                  icon={<IoArrowForward/>}
+                  position="right"
+                  handleClick={() => {}}
+                  otherClasses2="min-w-48 lg:max-w-48"
+
+                />
+              </div>
+            )
+          }
           {id === 6 && (
             <div className="mt-5 relative">
               {/* button border magic from tailwind css buttons  */}
