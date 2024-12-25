@@ -13,7 +13,7 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    // img: "/usf.jpeg",
+    img: "/usf.png",
     spareImg: "",
   },
   {
@@ -97,12 +97,20 @@ export const projects = [
   },
   {
     id: 4,
-    title: "7-bit Parallel Multiplier ASIC Design",
+    title: "5-bit Parallel Multiplier ASIC Design",
     des: "Developed a multiplier using 5nm transistor technology within a 900um x 900um area using custom transistor gate layouts.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "/ui.apple.com",
   },
+  {
+    id: 5,
+    title: "Object Localization",
+    des: "This project identifies a specific object in an image using keypoint matching and geometric transformations. The solution can locate any object given a proper reference image.",
+    img: "",
+    iconLists: [],
+    link: "https://github.com/dayne-2stacks/object-localization"
+  }
 ];
 
 export const testimonials = [

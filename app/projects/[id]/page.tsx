@@ -5,9 +5,11 @@ import { notFound } from "next/navigation";
 import { TextGenerateEffect } from "@/components/ui/TextGenerateEffect";
 import MagicButton from "@/components/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
-import Sandbox from "@/components/ui/projects/sandbox4";
+import Sandbox5 from "@/components/ui/projects/sandbox5";
+import Sandbox1 from "@/components/ui/projects/sandbox1";
+import Sandbox4 from "@/components/ui/projects/sandbox4";
 
-export default function ProjectDetails({ params }) {
+export default function ProjectDetails({ params } : any) {
   const project = projects.find((proj) => proj.id === parseInt(params.id));
 
   if (!project) {
@@ -51,7 +53,7 @@ export default function ProjectDetails({ params }) {
               ))}
             </div>
           </div>
-          <a href="#about">
+          <a href={project.link}>
             <MagicButton
               title="Visit Project"
               icon={<FaLocationArrow />}
@@ -59,7 +61,9 @@ export default function ProjectDetails({ params }) {
             />
           </a>
           <div>
-            <Sandbox />
+            {project.id === 5 && <Sandbox5 /> }
+            {project.id === 1 && <Sandbox1 /> }
+            {project.id === 4 && <Sandbox4/>}
           </div>
         </div>
       </div>
