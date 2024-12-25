@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { IoCopyOutline, IoArrowForward } from "react-icons/io5";
 
@@ -5,7 +6,6 @@ import { IoCopyOutline, IoArrowForward } from "react-icons/io5";
 import Lottie from "react-lottie";
 
 import { cn } from "@/lib/utils";
-
 
 import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
@@ -99,8 +99,9 @@ export const BentoGridItem = ({
           )}
         </div>
         <div
-          className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"
-            } `}
+          className={`absolute right-0 -bottom-5 ${
+            id === 5 && "w-full opacity-80"
+          } `}
         >
           {spareImg && (
             <img
@@ -150,7 +151,7 @@ export const BentoGridItem = ({
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
                     lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
-                    {item} 
+                    {item}
                   </span>
                 ))}
                 <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
@@ -163,26 +164,23 @@ export const BentoGridItem = ({
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
                     lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
-                    {item} 
+                    {item}
                   </span>
                 ))}
               </div>
             </div>
           )}
-          {
-            id == 3 && (
-              <div className="max-w-20 mt-relative">
-                <MagicButton
-                  title="View My Skills"
-                  icon={<IoArrowForward/>}
-                  position="right"
-                  handleClick={() => {}}
-                  otherClasses2="min-w-48 lg:max-w-48"
-
-                />
-              </div>
-            )
-          }
+          {id == 3 && (
+            <div className="max-w-20 mt-relative">
+              <MagicButton
+                title="View My Skills"
+                icon={<IoArrowForward />}
+                position="right"
+                handleClick={() => {}}
+                otherClasses2="min-w-48 lg:max-w-48"
+              />
+            </div>
+          )}
           {id === 6 && (
             <div className="mt-5 relative">
               {/* button border magic from tailwind css buttons  */}
@@ -190,8 +188,9 @@ export const BentoGridItem = ({
               {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
               {/* add handleCopy() for the copy the text */}
               <div
-                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
-                  }`}
+                className={`absolute -bottom-5 right-0 ${
+                  copied ? "block" : "block"
+                }`}
               >
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
                 <Lottie options={defaultOptions} height={200} width={400} />
