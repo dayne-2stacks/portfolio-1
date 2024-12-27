@@ -39,9 +39,9 @@ const ChatbotModal = ({ handleShowModal }: { handleShowModal: () => void }) => {
       return reply || "Sorry, I didn't understand that.";
     } catch (error) {
       console.error("Error fetching chatbot response:", error);
-      if (error.code === "ERR_NETWORK") {
-        return "Unable to reach the server. Please try again later.";
-      }
+      // if (error.code === "ERR_NETWORK") {
+      //   return "Unable to reach the server. Please try again later.";
+      // }
       return "There was an error processing your request.";
     }
   };
