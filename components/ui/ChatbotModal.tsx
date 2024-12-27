@@ -25,12 +25,8 @@ const ChatbotModal = ({ handleShowModal }: { handleShowModal: () => void }) => {
     try {
       const response = await axios.post(
         "https://chatbot-daynej-f0946d1c544b.herokuapp.com/chat/message",
-        { message: userMessage },
         {
-          headers: {
-            "Content-Type": "application/json",
-          },
-          timeout: 5000, // Set a timeout
+          message: userMessage,
         }
       );
       const contentArray = response.data.response.content;
@@ -39,9 +35,6 @@ const ChatbotModal = ({ handleShowModal }: { handleShowModal: () => void }) => {
       return reply || "Sorry, I didn't understand that.";
     } catch (error) {
       console.error("Error fetching chatbot response:", error);
-      // if (error.code === "ERR_NETWORK") {
-      //   return "Unable to reach the server. Please try again later.";
-      // }
       return "There was an error processing your request.";
     }
   };
