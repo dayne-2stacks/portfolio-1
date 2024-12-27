@@ -62,10 +62,13 @@ export default function Sandbox1() {
     formData.append("input", inputFile);
 
     try {
-      const response = await fetch("http://localhost:5000/detect", {
-        method: "POST",
-        body: formData,
-      });
+      const response = await fetch(
+        "https://projects-backend-00ae34b6fed4.herokuapp.com:5000/detect",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Failed to process the images");
@@ -88,8 +91,6 @@ export default function Sandbox1() {
     }
   };
 
- 
-
   return (
     <div className="pt-36 pb-20">
       <div className="sandbox">
@@ -105,8 +106,6 @@ export default function Sandbox1() {
             // marginBottom: "20px",
           }}
         >
-         
-
           <div
             className={`drop-zone ${draggingFile2 ? "dragging" : ""}`}
             onDragOver={(e) => handleDragOver(e, setDraggingFile2)}
@@ -125,7 +124,9 @@ export default function Sandbox1() {
             {inputFile ? (
               <p>File ready: {inputFile.name}</p>
             ) : (
-              <p>Drag and drop an image here for Detection, or click to upload</p>
+              <p>
+                Drag and drop an image here for Detection, or click to upload
+              </p>
             )}
             <input
               type="file"
@@ -138,11 +139,10 @@ export default function Sandbox1() {
         <form onSubmit={handleSubmit}>
           <button type="submit" disabled={loading} className="">
             <MagicButton
-             title={loading ? "Processing..." : "Submit"}
-             icon=""
-             position="right"
-
-             />
+              title={loading ? "Processing..." : "Submit"}
+              icon=""
+              position="right"
+            />
           </button>
         </form>
 
@@ -153,7 +153,11 @@ export default function Sandbox1() {
             <img
               src={processedImage}
               alt="Processed"
-              style={{ maxWidth: "100%", height: "auto", border: "2px solid #ccc" }}
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+                border: "2px solid #ccc",
+              }}
             />
           </div>
         )}

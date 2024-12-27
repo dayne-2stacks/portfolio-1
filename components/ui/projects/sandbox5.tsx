@@ -65,10 +65,13 @@ export default function Sandbox5() {
     formData.append("input", inputFile);
 
     try {
-      const response = await fetch("http://localhost:5000/process", {
-        method: "POST",
-        body: formData,
-      });
+      const response = await fetch(
+        "https://projects-backend-00ae34b6fed4.herokuapp.com:5000/process",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Failed to process the images");
@@ -90,8 +93,6 @@ export default function Sandbox5() {
       setLoading(false);
     }
   };
-
- 
 
   return (
     <div className="pt-36 pb-20">
@@ -166,11 +167,10 @@ export default function Sandbox5() {
         <form onSubmit={handleSubmit}>
           <button type="submit" disabled={loading} className="">
             <MagicButton
-             title={loading ? "Processing..." : "Submit"}
-             icon=""
-             position="right"
-
-             />
+              title={loading ? "Processing..." : "Submit"}
+              icon=""
+              position="right"
+            />
           </button>
         </form>
 
@@ -181,7 +181,11 @@ export default function Sandbox5() {
             <img
               src={processedImage}
               alt="Processed"
-              style={{ maxWidth: "100%", height: "auto", border: "2px solid #ccc" }}
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+                border: "2px solid #ccc",
+              }}
             />
           </div>
         )}
