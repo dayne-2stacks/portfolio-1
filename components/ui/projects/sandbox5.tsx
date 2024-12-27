@@ -66,7 +66,7 @@ export default function Sandbox5() {
 
     try {
       const response = await fetch(
-        "https://projects-backend-00ae34b6fed4.herokuapp.com:5000/process",
+        "https://projects-backend-00ae34b6fed4.herokuapp.com/process",
         {
           method: "POST",
           body: formData,
