@@ -1,8 +1,8 @@
 export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
-  { name: "Contact", link: "#contact" },
+  { name: "About", link: "/#about" },
+  { name: "Projects", link: "/#projects" },
+  { name: "Testimonials", link: "/#testimonials" },
+  { name: "Contact", link: "/#contact" },
 ];
 
 export const gridItems = [
@@ -35,7 +35,6 @@ export const gridItems = [
     titleClassName: "justify-center",
     img: "",
     spareImg: "",
-    
   },
   {
     id: 4,
@@ -75,42 +74,42 @@ export const projects = [
     id: 1,
     title: "Coin Detection Script",
     des: "Created a python program that scans an image file and uses a user implemented hough transform function to detect coins and classify based on average color, hsv profile and coin radius using manual thresholding and Support Vector Machines. This program reported a classification rate of 97.81%, false detection rate of 0% and detection rate of 95.54%.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    img: "/projects/coin-detection.png",
+    iconLists: [],
     link: "/ui.earth.com",
   },
   {
     id: 2,
     title: "RAG Employer Assistant",
     des: "Created a RAG based personal assistant that retrieves all my prior experiences and projects from an online server and communicates with interested employers by answering a tree of thought prompt that answers how my skills (if applicable) could be applied to their business model or job opening.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    img: "/projects/rag-model.png",
+    iconLists: [],
+    link: "#footer",
   },
   {
     id: 3,
     title: "Fingerprint Classification using GCN",
     des: "Used SMOTE to balance an unbalanced dataset and created a Graph Convolution Network with node embeddings to classify fingerprints with an accuracy of 86.5%",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    img: "/projects/finger-gcn.png",
+    iconLists: [],
     link: "/ui.aiimg.com",
   },
   {
     id: 4,
     title: "5-bit Parallel Multiplier ASIC Design",
     des: "Developed a multiplier using 5nm transistor technology within a 900um x 900um area using custom transistor gate layouts.",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    img: "/projects/object-local.png",
+    iconLists: [],
+    link: "",
   },
   {
     id: 5,
     title: "Object Localization",
     des: "This project identifies a specific object in an image using keypoint matching and geometric transformations. The solution can locate any object given a proper reference image.",
-    img: "",
+    img: "/projects/object-local.png",
     iconLists: [],
-    link: "https://github.com/dayne-2stacks/object-localization"
-  }
+    link: "https://github.com/dayne-2stacks/object-localization",
+  },
 ];
 
 export const testimonials = [
@@ -149,33 +148,21 @@ export const testimonials = [
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    name: "usfpcgs",
+    img: "/usfpcgs.svg",
+    nameImg: "/usfpcgsName.svg",
   },
   {
     id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
+    name: "tasa",
+    img: "/tasa.svg",
+    nameImg: "/tasaName.svg",
   },
   {
     id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    name: "amandala",
+    img: "/amandala.svg",
+    nameImg: "",
   },
 ];
 
@@ -190,8 +177,8 @@ export const workExperience = [
   },
   {
     id: 2,
-    title:  "Web Manager",
-    desc:  "Spearheaded website revamp and managed a database of 9,000+ users.",
+    title: "Web Manager",
+    desc: "Spearheaded website revamp and managed a database of 9,000+ users.",
     company: "Patel College of Global Sustainability",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",

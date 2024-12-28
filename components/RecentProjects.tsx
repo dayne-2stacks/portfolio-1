@@ -15,8 +15,8 @@ const RecentProjects = () => {
         <span className="text-purple">recent projects</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
-        {projects.slice(0, 4).map((item) => ( 
-           <div
+        {projects.slice(0, 4).map((item) => (
+          <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
           >
@@ -68,9 +68,12 @@ const RecentProjects = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
-                  </p>
+                  <Link
+                    href={`/projects/${item.id}`}
+                    className="flex lg:text-xl md:text-xs text-sm text-purple"
+                  >
+                    Check Out
+                  </Link>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>
               </div>
@@ -78,13 +81,9 @@ const RecentProjects = () => {
           </div>
         ))}
       </div>
-        <Link className="flex justify-center align-center" href="/projects">
-          <MagicButton
-            title="View More Projects..."
-            icon=""
-            position="left"
-            />
-        </Link>
+      <Link className="flex justify-center align-center" href="/projects">
+        <MagicButton title="View More Projects..." icon="" position="left" />
+      </Link>
     </div>
   );
 };
