@@ -98,7 +98,7 @@ export const projects = [
     id: 4,
     title: "5-bit Parallel Multiplier ASIC Design",
     des: "Developed a multiplier using 5nm transistor technology within a 900um x 900um area using custom transistor gate layouts.",
-    img: "/projects/object-local.png",
+    img: "/projects/multiplier.png",
     iconLists: [],
     link: "",
   },

@@ -33,7 +33,7 @@ const Clients = () => {
                   <img
                     src={company.img}
                     alt={company.name}
-                    className="md:w-10 w-5"
+                    className="md:w-16 w-5"
                   />
                   <img
                     src={company.nameImg}

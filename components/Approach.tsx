@@ -15,9 +15,7 @@ const Approach = () => {
         <Card
           title="Hardware Implementations"
           icon={<AceternityIcon order="Hardware Implementations" />}
-          des="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
+          des="Skilled FPGA and ASIC Developer with expertise in Verilog and computer system design. Proficient in hardware optimization, custom ASIC design, and advanced simulation tools like Vivado and Cadence Virtuoso. Experienced in designing complex systems, including audio processing boards and high-performance multipliers, with a focus on innovative and sustainable solutions."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -28,9 +26,7 @@ const Approach = () => {
         <Card
           title="Software Development"
           icon={<AceternityIcon order="Software Development" />}
-          des="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
+          des="Versatile software developer with expertise in creating robust applications using languages like Python, Java, C++, and JavaScript. Proficient in modern frameworks including React, Node.js, and Django, with a strong background in REST API development and full-stack solutions. Skilled in leveraging DevOps tools like Docker and GitHub Actions to streamline deployment and integration. Demonstrated success in designing efficient, scalable software for real-world applications, from web platforms to machine learning pipelines."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -50,9 +46,7 @@ const Approach = () => {
         <Card
           title="AI & ML Savvy"
           icon={<AceternityIcon order="AI & ML Savvy" />}
-          des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up."
+          des="Innovative AI and Machine Learning enthusiast with hands-on experience in building advanced models using PyTorch, Scikit-learn, and OpenCV2. Proficient in developing and optimizing algorithms for tasks like object detection, classification, and graph-based learning. Skilled in data preprocessing, feature engineering, and model evaluation. Demonstrated expertise in projects such as fingerprint classification using Graph Convolution Networks and coin detection with SVMs, achieving high accuracy in real-world applications. Passionate about leveraging AI/ML for creative, impactful solutions."
         >
           <CanvasRevealEffect
             animationSpeed={3}
