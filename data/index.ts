@@ -76,7 +76,7 @@ export const projects = [
     des: "Created a python program that scans an image file and uses a user implemented hough transform function to detect coins and classify based on average color, hsv profile and coin radius using manual thresholding and Support Vector Machines. This program reported a classification rate of 97.81%, false detection rate of 0% and detection rate of 95.54%.",
     img: "/projects/coin-detection.png",
     iconLists: [],
-    link: "/ui.earth.com",
+    link: "/projects/1",
   },
   {
     id: 2,
@@ -92,7 +92,7 @@ export const projects = [
     des: "Used SMOTE to balance an unbalanced dataset and created a Graph Convolution Network with node embeddings to classify fingerprints with an accuracy of 86.5%",
     img: "/projects/finger-gcn.png",
     iconLists: [],
-    link: "/ui.aiimg.com",
+    link: "/projects/3",
   },
   {
     id: 4,
@@ -100,7 +100,7 @@ export const projects = [
     des: "Developed a multiplier using 5nm transistor technology within a 900um x 900um area using custom transistor gate layouts.",
     img: "/projects/multiplier.png",
     iconLists: [],
-    link: "",
+    link: "/projects/4",
   },
   {
     id: 5,
