@@ -46,9 +46,10 @@ const ChatbotModal = ({ handleShowModal }: { handleShowModal: () => void }) => {
       setMessages((prev) => [...prev, { text: userInput, isUser: true }]);
       const currentInput = userInput;
       setUserInput("");
-
       // Fetch the chatbot's response
-      const chatbotReply = await fetchChatbotResponse(currentInput);
+      const rawChatbotReply = await fetchChatbotResponse(currentInput);
+      // Clean the chatbot's response by removing citations
+      const chatbotReply = rawChatbotReply.replace(/【.*?】/g, "");
       setMessages((prev) => [...prev, { text: chatbotReply, isUser: false }]);
     }
   };
