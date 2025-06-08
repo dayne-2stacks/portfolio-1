@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "vercel --prod"
+    "deploy": "npx vercel --prod"
   },
   "proxy": "https://chatbot-daynej-f0946d1c544b.herokuapp.com",
   "dependencies": {
@@ -32,8 +32,7 @@
     "tailwind-merge": "^2.2.2",
     "tailwindcss-animate": "^1.0.7",
     "three": "^0.163.0",
-    "three-globe": "^2.31.0",
-    "vercel": "^32.3.0"
+    "three-globe": "^2.31.0"
   },
   "devDependencies": {
     "@types/node": "^20",
