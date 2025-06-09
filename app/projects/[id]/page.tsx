@@ -1,5 +1,6 @@
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
-import { navItems, projects } from "@/data";
+import { navItems } from "@/data/navItems";
+import { projects } from "@/data/projects";
 import { Spotlight } from "@/components/ui/Spotlight";
 import { notFound } from "next/navigation";
 import { TextGenerateEffect } from "@/components/ui/TextGenerateEffect";

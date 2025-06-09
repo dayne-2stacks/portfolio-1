@@ -1,8 +1,8 @@
 "use client"
 import { FaLocationArrow } from "react-icons/fa6";
 
-import { socialMedia } from "@/data";
-import MagicButton from "./MagicButton";
+import { socialMedia } from "@/data/socialMedia";
+import MagicButton from "../MagicButton";
 import { IoChatbox } from "react-icons/io5";
 import { useState } from "react";
 import ChatbotModal from "./ui/ChatbotModal";

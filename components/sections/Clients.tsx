@@ -3,8 +3,9 @@
 import React from "react";
 import Image from "next/image";
 
-import { companies, testimonials } from "@/data";
-import { InfiniteMovingCards } from "./ui/InfiniteCards";
+import { companies } from "@/data/companies";
+import { testimonials } from "@/data/testimonials";
+import { InfiniteMovingCards } from "../ui/InfiniteCards";
 
 const Clients = () => {
   return (
