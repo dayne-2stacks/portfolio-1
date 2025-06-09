@@ -2,6 +2,7 @@ import Link from "next/link";
 import { projects, navItems } from "@/data";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { TextGenerateEffect } from "@/components/ui/TextGenerateEffect";
+import Image from "next/image";
 
 export default function ProjectsPage() {
   return (
@@ -31,17 +32,19 @@ export default function ProjectsPage() {
                       className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                       style={{ backgroundColor: "#13162D" }}
                     >
-                      <img
+                      <Image
                         src="/bg.png"
                         alt="background"
+                        fill
                         className="absolute w-full h-full object-cover"
                       />
                     </div>
 
-                    <img
+                    <Image
                       src={project.img}
                       alt="cover"
-                      className="z-10 absolute bottom-0 w-auto h-full object-contain"
+                      fill
+                      className="z-10 absolute bottom-0 object-contain"
                     />
                   </div>
 

@@ -1,6 +1,7 @@
 "use client";
 import MagicButton from "@/components/MagicButton";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Sandbox1() {
   const [inputFile, setFile2] = useState<File | null>(null);
@@ -150,9 +151,11 @@ export default function Sandbox1() {
         {processedImage && (
           <div className="result">
             <h2>Processed Image</h2>
-            <img
+            <Image
               src={processedImage}
               alt="Processed"
+              width={500}
+              height={500}
               style={{
                 maxWidth: "100%",
                 height: "auto",

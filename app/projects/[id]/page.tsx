@@ -8,8 +8,9 @@ import { FaLocationArrow } from "react-icons/fa6";
 import Sandbox5 from "@/components/ui/projects/sandbox5";
 import Sandbox1 from "@/components/ui/projects/sandbox1";
 import Sandbox4 from "@/components/ui/projects/sandbox4";
+import Image from "next/image";
 
-export default function ProjectDetails({ params } : any) {
+export default function ProjectDetails({ params }: any) {
   const project = projects.find((proj) => proj.id === parseInt(params.id));
 
   if (!project) {
@@ -48,7 +49,13 @@ export default function ProjectDetails({ params } : any) {
                     transform: `translateX(-${5 * index + 2}px)`,
                   }}
                 >
-                  <img src={icon} alt="icon5" className="p-2" />
+                  <Image
+                    src={icon}
+                    alt="icon5"
+                    width={32}
+                    height={32}
+                    className="p-2"
+                  />
                 </div>
               ))}
             </div>
@@ -61,9 +68,9 @@ export default function ProjectDetails({ params } : any) {
             />
           </a>
           <div>
-            {project.id === 5 && <Sandbox5 /> }
-            {project.id === 1 && <Sandbox1 /> }
-            {project.id === 4 && <Sandbox4/>}
+            {project.id === 5 && <Sandbox5 />}
+            {project.id === 1 && <Sandbox1 />}
+            {project.id === 4 && <Sandbox4 />}
           </div>
         </div>
       </div>
