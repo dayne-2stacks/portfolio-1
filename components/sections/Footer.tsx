@@ -1,18 +1,18 @@
-"use client"
+"use client";
 import { FaLocationArrow } from "react-icons/fa6";
 
 import { socialMedia } from "@/data/socialMedia";
 import MagicButton from "../MagicButton";
 import { IoChatbox } from "react-icons/io5";
 import { useState } from "react";
-import ChatbotModal from "./ui/ChatbotModal";
+import ChatbotModal from "../ui/ChatbotModal";
 import Image from "next/image";
 
-const Footer = () => { 
-  const [showModal, setShowModal] = useState(false)
+const Footer = () => {
+  const [showModal, setShowModal] = useState(false);
   const handleShowModal = () => {
-    setShowModal(!showModal)
-  }
+    setShowModal(!showModal);
+  };
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       {/* background grid */}
@@ -47,7 +47,7 @@ const Footer = () => {
           position="right"
           handleClick={handleShowModal}
         />
-        {showModal && <ChatbotModal handleShowModal={handleShowModal}/>}
+        {showModal && <ChatbotModal handleShowModal={handleShowModal} />}
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
