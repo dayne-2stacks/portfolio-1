@@ -1,11 +1,16 @@
 "use client"
 import { FaLocationArrow } from "react-icons/fa6";
 
-import { socialMedia } from "@/data";
-import MagicButton from "./MagicButton";
+import { socialMedia } from "@/data/socialMedia";
+import MagicButton from "../MagicButton";
 import { IoChatbox } from "react-icons/io5";
 import { useState } from "react";
+<<<<<<< ours
 import ChatbotModal from "./ui/ChatbotModal";
+=======
+import ChatbotModal from "../ui/ChatbotModal";
+import Image from "next/image";
+>>>>>>> theirs
 
 const Footer = () => { 
   const [showModal, setShowModal] = useState(false)

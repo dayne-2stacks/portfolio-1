@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { projects, navItems } from "@/data";
+import { projects } from "@/data/projects";
+import { navItems } from "@/data/navItems";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { TextGenerateEffect } from "@/components/ui/TextGenerateEffect";
 
